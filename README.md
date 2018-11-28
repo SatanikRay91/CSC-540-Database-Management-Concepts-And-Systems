@@ -1,9 +1,9 @@
 # CSC-540-Database-Management-Concepts-And-Systems
 Project on Database Application Design &amp; Implementation
 
-Project Specification
+Project Specification :-
 
-Background and Overview
+Background and Overview :
 Acme Car Service and Repair Centers is a chain of car service centers owned by Acme
 corporation spread across the United States. They service and repair only cars that are
 manufactured by Honda, Nissan, and Toyota.
@@ -12,7 +12,7 @@ customers to keep a record of and manage the following information for all its r
 We have suggested the possible attributes for each entity. You may need additional attributes
 beyond the ones mentioned in this document.
 
-Service Center details
+Service Center details :
 Every state in the United States has three service centers, each center independently managed
 by a manager, a receptionist and at least five mechanics, and operates 5 days a week (M-F)
 from 8 AM to 7 PM. Each service center is identified by a unique ID, a name, an address, and a
@@ -25,7 +25,7 @@ manager and receptionist are paid a monthly salary while the mechanic is paid ho
 solely on the number of hours that he works servicing/repairing a vehicle (a maximum of 11
 hours a day). Assume that a paycheck is generated on the 1st and 15th each month.
 
-Customer details
+Customer details :
 A customer in our system is identified using a unique customer id. Additionally, the system
 records the following information about the customer: name, email address (unique), address,
 phone number, and the vehicles he gets serviced/repaired at service centers owned by Acme.
@@ -35,7 +35,7 @@ type of most recent service/repair, and the date of most recent service/repair. 
 simplicity, we shall assume that car ownership does not change and also assume that the
 license plate number of the car always remains the same.
 
-Inventory details
+Inventory details :
 For each service center, we want to keep track of its parts inventory. For each part in the
 inventory, that is uniquely identified by a partid, we want to record its name, current quantity,
 unit price, a threshold for the minimum quantity that must be present in the inventory and a
@@ -62,7 +62,7 @@ the order is received by an employee.
 To make it simpler, we will assume that parts are always available at the distributor and not
 bother with keeping the inventory for a distributor.
 
-Car and Service details
+Car and Service details :
 Services offered by Acme are either maintenance or repair. For each type of car that is serviced
 by Acme service centers, there is a predetermined maintenance service schedule based on the
 number of miles traveled since the last service. Three types of services are provided for each
@@ -130,7 +130,7 @@ provided along with the sample data and an application flow document soon. The a
 flow document will provide a set of menu options that you should organize your application
 around.
 
-Role and Access Control Requirements
+Role and Access Control Requirements :
 Employees of Acme and its customers all have unique ids for logging into the system.
 Customers will use their email addresses as their login id while managers and receptionists will
 use their 9-digit employee id for accessing the system. Please refer to the application flow
@@ -140,7 +140,6 @@ Application Requirements
 In general, your application should support only role-authorized actions. This will largely be
 accomplished through the combination of menus that present only appropriate actions for the
 given role and context, and advanced features like Views, Procedures or Triggers and
-4
 Authorization. Additional specification about menu format is provided in the application flow
 document. This will allow a consistent menu format that will make grading the projects easier. It
 is expected that your application should handle errors elegantly and not reset on every simple
@@ -150,7 +149,7 @@ We expect a command line interface for the application and do not expect a graph
 interface. Developing the latter is strictly optional and no extra credit will be provided for doing
 so.
 
-Application Flow
+Application Flow :-
 This part of description gives a general idea of what the application should be like, which menu
 items are available for a particular role, the kind of queries to run/actions to perform for a
 particular menu item, and the kind of output to expect. The application entry point should be an
@@ -159,16 +158,16 @@ and employees. After customers log in they should be given options like schedule
 appointments, view invoices etc. A more complete application flow description is available as a
 separate document.
 
-Sample Queries
+Sample Queries :
 Queries on your database will be helpful for assessing the quality of database design. However,
 it isn’t possible to leave that to only demo day. Consequently, you will need to implement some
 queries as part of your project. The list of sample queries will be given shortly. However, here
 are some of the required queries that must be supported by your application.
 
-Required Queries
+Required Queries :
 The following shows examples of query classes and queries that should be supported by
 your application:
-Retrieval Queries
+Retrieval Queries :
 1. Find a customer who did not get Service A for a particular car on time
 2. Find a customer who has not get any of his cars serviced
 3. Find the most frequently used part at the current location
@@ -177,8 +176,8 @@ Retrieval Queries
 window
 6. Find the mechanic with the most number of labor hours at each service center of Acme
 corporation
-5
-Reporting Queries
+
+Reporting Queries :
 1. Generate an invoice for the most recent service for a customer
 2. Generate an itemized invoice for the most recent service for a customer (540 only)
 3. For each location, show the average number of cars serviced per day
@@ -188,7 +187,8 @@ that service. Do this across all service centers. (For 540 - Also do this per se
 6. Display the current inventory levels at the current location
 7. Find the number of repair requests in past one month which includes a warrantied
 service
-Insert and Update Queries
+
+Insert and Update Queries :
 1. Create a new user account for the receptionist, and mechanics
 2. Update profile information (name, address, phone number, and password) for logged in
 user
